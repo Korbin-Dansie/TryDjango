@@ -37,3 +37,9 @@ http://127.0.0.1:8000/
 -- Notes --
 Because we are using a virtual env we need to change the python interperter to this environment.
 For vs code ctrl+shit+p and search interperter. 
+    pipenv run manage.py makemigrations
+    pipenv run manage.py migrate
+
+    -- Create a new app / folder -- 
+    pipenv run manage.py startapp YOUR_APP_NAME
+

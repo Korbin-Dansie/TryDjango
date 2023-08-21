@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Third Pary
+
+    # Own startapp that I created
+    'products'
 ]
 
 MIDDLEWARE = [
