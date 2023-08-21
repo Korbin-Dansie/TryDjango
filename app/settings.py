@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     # Third Pary
 
     # Own startapp that I created
-    'products'
+    'products',
+    'pages'
 ]
 
 MIDDLEWARE = [
