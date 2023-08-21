@@ -31,6 +31,8 @@ django-admin startproject app .
 python manage.py runserver
 http://127.0.0.1:8000/
 
+    To run with pipenv
+    pipenv run manage.py runserver
 
 -- Notes --
 Because we are using a virtual env we need to change the python interperter to this environment.
