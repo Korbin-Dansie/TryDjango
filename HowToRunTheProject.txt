@@ -1,0 +1,32 @@
+https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+virtualenv is used to manage Python packages for different projects. 
+Using virtualenv allows you to avoid installing Python packages globally which could break system tools or other projects.
+You can install virtualenv using pip.
+
+-- Install --
+py -m pip install --user virtualenv
+
+-- Create --
+py -m venv env
+
+Note: You should exclude your virtual environment directory from your version control system using .gitignore or similar.
+
+-- Activating --
+./env/Scripts/activate
+
+-- Deactivate --
+deactivate
+
+
+-- Alternative Use-- 
+pipenv
+Note: after it is installed
+
+-- To install django --
+pipenv install django
+pipenv shell
+django-admin startproject app .
+
+-- To run django --
+python manage.py runserver
+http://127.0.0.1:8000/
