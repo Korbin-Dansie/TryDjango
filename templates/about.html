@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>About</h2>
+<p>This is my passed in context. {{ my_text }}</p>
+<p>Use the key that you passed in {{ my_number }}</p>
+<p>This is a list {{ my_list }}</p>
+<p>Loop through the list</p>
+<ul>
+    {% for item in my_list %}
+    <li>{{item}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
