@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
-<body>
-    <main>
-        <h1>This is the home page based off of a template.</h1>
+{% extends 'base.html' %}
 
-        <!-- Display the User information -->
-        {{ request.user }} 
-    </main>
-    <footer>
+{% block content %}
+<h2>This is the home page based off of a template.</h2>
 
-    </footer>
-</body>
-</html>
+<!-- Display the User information -->
+{{ request.user }}
+{% endblock %}
