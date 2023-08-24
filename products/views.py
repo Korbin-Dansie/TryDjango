@@ -8,4 +8,4 @@ def product_detail_view(request):
         "site_title": "Products",
         "object": obj,
     }
-    return render(request, "product/detail.html", context)
+    return render(request, "products/product_detail.html", context)

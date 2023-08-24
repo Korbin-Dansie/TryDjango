@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>This is the product view</h2>
+    <h3>In Products/Templates/Products</h3>
+    <h3>Item</h3>
+    <ul>
+        <li>Title: {{object.title}}</li>
+        <li>Description: {% if object.description == null %} N/A {% else %}{{object.description}}{% endif %}</li>
+        <li>Price: {{object.price}}</li>
+
+    </ul>
+{% endblock %}
