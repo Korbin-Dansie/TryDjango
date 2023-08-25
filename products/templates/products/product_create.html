@@ -4,6 +4,7 @@
     <h2>Create a New Product</h2>
     <form method="POST">
         {% csrf_token %}
+        <!-- Using django to create form using p tags -->
         {{ form.as_p }}
         <input type="submit" value="save"/>
     </form>
